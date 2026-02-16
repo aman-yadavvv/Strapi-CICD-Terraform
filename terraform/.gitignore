@@ -1,0 +1,7 @@
+.terraform
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+# Ignore the SSH key files
+strapi-key
+strapi-key.pub
