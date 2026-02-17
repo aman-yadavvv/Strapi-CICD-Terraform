@@ -1,7 +1,7 @@
 resource "aws_instance" "strapi_instance" {
   ami           = var.ami_id 
   instance_type = var.instance_type
-  key_name      = aws_key_pair.strapi_key_pair.key_name
+  key_name      = "strapi-key-cicd"
 
   subnet_id                   = aws_subnet.public.id
   vpc_security_group_ids      = [aws_security_group.strapi_sg.id]
